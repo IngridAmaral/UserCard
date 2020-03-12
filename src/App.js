@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import user from "./images/user.png";
 import "./App.css";
 
+import { createStore } from 'redux';
+
+const store = createStore(reducer)
+
 class App extends Component {
   state = {
     name: "Alex Bakery",
